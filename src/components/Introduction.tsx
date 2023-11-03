@@ -46,9 +46,19 @@ const Introduction = ({
             animate={inView ? "visible" : "hidden"}
             className="space-y-2 text-center md:text-left"
           >
-            <h1 className="text-3xl md:text-4xl font-display ">
+            <div>
+            <h1 className="text-3xl  md:text-4xl font-display ">
               Hi, I am Mehul Parekh
             </h1>
+              <Link
+                className="underline underline-offset-1 text-zinc-600"
+                target="_blank"
+                href={"mailto:mehulparekh144@gmail.com"}
+              >
+                mehulparekh144@gmail.com
+                
+              </Link>
+            </div>
             <p className="text-base">
               I am a FullStack Developer and I love creating web applications
               and exciting projects !
@@ -83,16 +93,6 @@ const Introduction = ({
                 href={"https://twitter.com/Mehul64188112"}
               >
                 <Twitter className="h-4 w-4 group-hover:scale-110 transition-transform" />
-              </Link>
-              <Link
-                target="_blank"
-                className={`bg-zinc-800 text-zinc-300 p-2 hover:scale-105 ${
-                  randomColor[Math.floor(Math.random() * randomColor.length)]
-                } rounded-full group`}
-                aria-label="Mail"
-                href={"mailto:mehulparekh144@gmail.com"}
-              >
-                <Mail className="h-4 w-4 group-hover:scale-110 transition-transform" />
               </Link>
               <Link
                 target="_blank"
@@ -166,16 +166,7 @@ const Introduction = ({
               >
                 <Twitter className="h-4 w-4 group-hover:scale-110 transition-transform" />
               </Link>
-              <Link
-                target="_blank"
-                className={`bg-zinc-800 text-zinc-300 p-2 hover:scale-105 ${
-                  randomColor[Math.floor(Math.random() * randomColor.length)]
-                } rounded-full group`}
-                aria-label="Mail"
-                href={"mailto:mehulparekh144@gmail.com"}
-              >
-                <Mail className="h-4 w-4 group-hover:scale-110 transition-transform" />
-              </Link>
+
               <Link
                 target="_blank"
                 className={`bg-zinc-800 text-zinc-300 p-2 hover:scale-105 ${
