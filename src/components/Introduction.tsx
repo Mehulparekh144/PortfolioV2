@@ -47,16 +47,15 @@ const Introduction = ({
             className="space-y-2 text-center md:text-left"
           >
             <div>
-            <h1 className="text-3xl  md:text-4xl font-display ">
-              Hi, I am Mehul Parekh
-            </h1>
+              <h1 className="text-3xl  md:text-4xl font-display ">
+                Hi, I am Mehul Parekh
+              </h1>
               <Link
                 className="underline underline-offset-1 text-zinc-600"
                 target="_blank"
                 href={"mailto:mehulparekh144@gmail.com"}
               >
                 mehulparekh144@gmail.com
-                
               </Link>
             </div>
             <p className="text-base">
@@ -131,6 +130,13 @@ const Introduction = ({
             <h1 className="text-3xl md:text-4xl font-display ">
               Hi, I am Mehul Parekh
             </h1>
+            <Link
+              className="underline underline-offset-1 text-zinc-600"
+              target="_blank"
+              href={"mailto:mehulparekh144@gmail.com"}
+            >
+              mehulparekh144@gmail.com
+            </Link>
             <p className="text-base">
               I am a FullStack Developer and I love creating web applications
               and exciting projects !
