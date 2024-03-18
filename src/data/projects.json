@@ -66,6 +66,14 @@
       ],
       "img": "/airglobe.png",
       "git": "https://github.com/Mehulparekh144/AirBNB-Clone-using-MERN-Stack"
+    },
+    {
+      "name": "Pothole Detection System",
+      "link": "https://drive.google.com/file/d/1xtRY1FzZAEQOzOAumUIDb-RbxSKeyLRD/view?usp=sharing",
+      "desc": "Constructed a CNN-based sequential model used to classify between potholes and smooth roads, also proposed VGG-16 for object detection, achieving an accuracy of 93%. Utilized image processing techniques on Washington DC maps to convert 80% of tiffs into training data for the MaskRCNN model. Experimented with models like YOLOv5 and ResNet50, achieving a 75% precision in ResNet50 after incorporating hyper-parameter tuning.",
+      "tech": ["Python", "ArcGIS", "Sklearn", "Tensorflow", "OpenCV"],
+      "img": "/pothole.PNG",
+      "git": "https://github.com/Mehulparekh144/Pothole-Detection-using-Deep-Learning-and-ArcGIS.git"
     }
   ]
 }
