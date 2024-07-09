@@ -4,13 +4,7 @@ import MaxWidthWrapper from "./MaxWidthWrapper";
 import Link from "next/link";
 import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
-import {
-  File,
-  Github,
-  Linkedin,
-  ExternalLink,
-  Mail,
-} from "lucide-react";
+import { File, Github, Linkedin, ExternalLink, Mail } from "lucide-react";
 
 import { TypewriterEffect } from "./ui/TypewriterEffect";
 import { text } from "stream/consumers";

@@ -18,7 +18,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <link rel="icon" href="./logo.ico" sizes="any" />
+      <link rel="icon" href="/images/images.ico" sizes="<generated>" />
       <body className={cn("min-h-screen antialiased", jost.className)}>
         <Providers>
           {children}
