@@ -33,7 +33,7 @@ const About = () => {
           <CardBody className="text-sm md:text-lg p-10">
             Hello, I am Mehul Parekh, currently pursuing a{" "}
             <span className="font-bold text-slate-600">
-              Master's in Computer Science at Northeastern University's Khoury
+              Master&apos;s in Computer Science at Northeastern University&apos;s Khoury
               College of Computer Sciences
             </span>
             . I hold a Bachelor of Technology in Information Technology from KJ
