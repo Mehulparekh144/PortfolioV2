@@ -5,6 +5,5 @@
 @tailwind utilities;
 
 body{
-  /* background-image: url('/background.jpeg');
-  background-repeat: no-repeat; */
+  @apply dark:bg-dark-backgroud ;
 }

@@ -2,7 +2,7 @@
 import AnimatedPage from '@/components/AnimatedPage'
 import MaxWidthWrapper from '@/components/MaxWidthWrapper'
 import { Chip, Divider } from '@nextui-org/react'
-import { Code2,  Link2, MoveLeft } from 'lucide-react'
+import { Code2,  ExternalLink,  Github,  Link2, MoveLeft } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useSearchParams } from 'next/navigation'
@@ -28,7 +28,7 @@ const Project = () => {
 ];
   return (
     <AnimatedPage>
-    <MaxWidthWrapper className='relative'>
+    <MaxWidthWrapper className='relative py-4'>
       <Link href={"/"} className="absolute w-max h-max  inset-0 top-4 left-4 z-10 bg-zinc-400/10 backdrop-blur-lg text-zinc-700 rounded-full p-2 md:p-4">
         <MoveLeft/>
       </Link>
@@ -52,19 +52,19 @@ const Project = () => {
           <div className="flex gap-4 items-center">
             <Link
               href={git ?? ""}
-              className="flex gap-1 items-center font-medium"
+              className="flex gap-2 items-center font-medium"
               aria-label="Repository"
               target="_blank"
             >
-              Git <Code2 className="h-5 w-5" />
+              Git <Github className="h-5 w-5" />
             </Link>
             <Link
               href={link ?? ""}
-              className="flex gap-1 items-center font-medium"
+              className="flex gap-2 items-center font-medium"
               aria-label="Demo"
               target="_blank"
             >
-              Demo <Link2 className="h-5 w-5" />
+              Demo <ExternalLink className="h-5 w-5" />
             </Link>
           </div>
         </div>

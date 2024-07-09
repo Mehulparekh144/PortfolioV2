@@ -2,8 +2,8 @@
   "data": [
     {
       "name": "Protrackr",
-      "link": "https://protrackr-issue-tracker.vercel.app/",
-      "desc": "Issue Tracker Pro is a robust issue tracking system powered by TRPC NextJS 13, designed to streamline issue management. It enables users to create teams, assign issues, manage users, view issue details, set deadlines, prioritize tasks, and track issue statuses, making it an invaluable tool for optimizing workflow efficiency, ensuring transparency, and achieving project milestones with ease.",
+      "deploy": "https://protrackr-issue-tracker.vercel.app/",
+      "desc": "Protrackr is a robust issue tracking system powered by TRPC NextJS 13, designed to streamline issue management. It enables users to create teams, assign issues, manage users, view issue details, set deadlines, prioritize tasks, and track issue statuses, making it an invaluable tool for optimizing workflow efficiency, ensuring transparency, and achieving project milestones with ease.",
       "tech": [
         "NextJS",
         "TRPC",
@@ -19,7 +19,7 @@
     },
     {
       "name": "SoundBoom",
-      "link": "https://soundboom.vercel.app/",
+      "deploy": "https://soundboom.vercel.app/",
       "desc": "SoundBoom MERN Ecommerce is a web application built with the MERN stack that allows users to browse and purchase audio products. It includes features such as user authentication, shopping cart management, payment integration with Stripe, and search and filter functionality.",
       "tech": [
         "ReactJS",
@@ -35,9 +35,9 @@
       "git": "https://github.com/Mehulparekh144/SoundBoom_MERN_Ecommerce"
     },
     {
-      "name": "JobLinker",
-      "link": "https://joblinker.vercel.app/",
-      "desc": "JobLinker is a cutting-edge job connection platform developed with React, TypeScript, ExpressJS, NodeJS, Zustand state management, and integrated with Supabase. It empowers job seekers to apply while uploading their resumes and recruiters to post jobs.",
+      "name": "Job Linker",
+      "deploy": "https://joblinker.vercel.app/",
+      "desc": "Job Linker is a cutting-edge job connection platform developed with React, TypeScript, ExpressJS, NodeJS, Zustand state management, and integrated with Supabase. It empowers job seekers to apply while uploading their resumes and recruiters to post jobs.",
       "tech": [
         "ReactJS",
         "Typescript",
@@ -49,11 +49,11 @@
         "TailwindCSS"
       ],
       "img": "/joblinker.png",
-      "git": "https://github.com/Mehulparekh144/JobLinker"
+      "git": "https://github.com/Mehulparekh144/Jobdeployer"
     },
     {
       "name": "Airglobe",
-      "link": "https://airglobe.vercel.app/",
+      "deploy": "https://airglobe.vercel.app/",
       "desc": "This project is an Airbnb clone that has been built using the MERN stack. The project provides users with the ability to book accommodations, as well as add their own properties, which includes the ability to upload images using Cloudinary.",
       "tech": [
         "ReactJS",
@@ -69,7 +69,7 @@
     },
     {
       "name": "Pothole Detection System",
-      "link": "https://drive.google.com/file/d/1xtRY1FzZAEQOzOAumUIDb-RbxSKeyLRD/view?usp=sharing",
+      "deploy": "https://drive.google.com/file/d/1xtRY1FzZAEQOzOAumUIDb-RbxSKeyLRD/view?usp=sharing",
       "desc": "Constructed a CNN-based sequential model used to classify between potholes and smooth roads, also proposed VGG-16 for object detection, achieving an accuracy of 93%. Utilized image processing techniques on Washington DC maps to convert 80% of tiffs into training data for the MaskRCNN model. Experimented with models like YOLOv5 and ResNet50, achieving a 75% precision in ResNet50 after incorporating hyper-parameter tuning.",
       "tech": ["Python", "ArcGIS", "Sklearn", "Tensorflow", "OpenCV"],
       "img": "/pothole.PNG",
