@@ -38,6 +38,13 @@ import {
   FigmaPlain,
   JenkinsPlain,
   LinuxPlain,
+  NodejsLine,
+  TrpcOriginal,
+  ReduxOriginal,
+  PrismaOriginal,
+  SupabaseOriginal,
+  FramermotionOriginal,
+  HibernateOriginal,
 } from "devicons-react";
 import { Code } from "lucide-react";
 
@@ -45,60 +52,68 @@ type IconComponent = React.ComponentType<{ className?: string }>;
 
 const skillIcons: Record<string, IconComponent | null> = {
   // Languages
-  Java: JavaPlain,
-  Javascript: JavascriptPlain,
-  Typescript: TypescriptPlain,
-  Python: PythonPlain,
+  java: JavaPlain,
+  javascript: JavascriptPlain,
+  typescript: TypescriptPlain,
+  python: PythonPlain,
 
   // Web Technologies
-  ReactJS: ReactOriginal,
-  NextJS: NextjsPlain,
-  ExpressJS: ExpressOriginal,
-  SpringBoot: SpringOriginal,
-  TRPC: null, // No icon available
-  Django: DjangoPlain,
-  HTML: Html5Plain,
-  CSS: Css3Plain,
-  TailwindCSS: TailwindcssOriginal,
-  Vercel: VercelOriginal,
-  Kafka: ApachekafkaOriginal,
-  RabbitMQ: RabbitmqOriginal,
+  reactjs: ReactOriginal,
+  nextjs: NextjsPlain,
+  expressjs: ExpressOriginal,
+  springboot: SpringOriginal,
+  trpc: TrpcOriginal, // No icon available
+  django: DjangoPlain,
+  html: Html5Plain,
+  css: Css3Plain,
+  nodejs : NodejsLine,
+  tailwindcss: TailwindcssOriginal,
+  vercel: VercelOriginal,
+  kafka: ApachekafkaOriginal,
+  rabbitmq: RabbitmqOriginal,
+  redux : ReduxOriginal,
+  prisma: PrismaOriginal,
+  supabase: SupabaseOriginal,
+  framer: FramermotionOriginal,
+
 
   // Database Technologies
-  MongoDB: MongodbPlain,
-  MySQL: MysqlOriginal,
-  PostgreSQL: PostgresqlPlain,
-  Redis: RedisPlain,
+  mongodb: MongodbPlain,
+  mysql: MysqlOriginal,
+  postgresql: PostgresqlPlain,
+  redis: RedisPlain,
+  hibernate : HibernateOriginal,
 
   // Cloud & DevOps
-  Docker: DockerPlain,
-  Kubernetes: KubernetesPlain,
-  AWS: AmazonwebservicesLineWordmark,
-  Terraform: TerraformPlain,
+  docker: DockerPlain,
+  kubernetes: KubernetesPlain,
+  aws: AmazonwebservicesLineWordmark,
+  terraform: TerraformPlain,
 
   // Testing Frameworks
-  Junit: JunitPlain,
-  Mockito: null, // No icon available
-  Jest: JestPlain,
-  Vitest: VitestPlain,
+  junit: JunitPlain,
+  mockito: null, // No icon available
+  jest: JestPlain,
+  vitest: VitestPlain,
 
   // Libraries
-  Pandas: PandasPlain,
-  Numpy: NumpyPlain,
-  Sklearn: ScikitlearnOriginal,
-  Matplotlib: MatplotlibPlain,
-  Tensorflow: TensorflowOriginal,
-  OpenCV: OpencvPlain,
-  Keras: KerasPlain,
-  Pytorch: PytorchOriginal,
+  pandas: PandasPlain,
+  numpy: NumpyPlain,
+  sklearn: ScikitlearnOriginal,
+  matplotlib: MatplotlibPlain,
+  tensorflow: TensorflowOriginal,
+  opencv: OpencvPlain,
+  keras: KerasPlain,
+  pytorch: PytorchOriginal,
 
   // Other Tools
-  Git: GitPlain,
-  Figma: FigmaPlain,
-  Jenkins: JenkinsPlain,
-  VMWare: null, // No icon available
-  Linux: LinuxPlain,
+  git: GitPlain,
+  figma: FigmaPlain,
+  jenkins: JenkinsPlain,
+  vmware: null, // No icon available
+  linux: LinuxPlain,
 };
+
 
 interface SkillBadgeProps {
   skill: string;
@@ -110,7 +125,7 @@ const SkillBadge: React.FC<SkillBadgeProps> = ({ skill }) => {
   return (
     <div className="flex items-center font-display  bg-zinc-900 text-white rounded-md px-3 py-1 text-sm">
       <IconComponent className="w-5 h-5 inline-block mr-2" size={"15"} />
-      {skill}
+      {skill[0].toUpperCase() + skill.slice(1)}
     </div>
   );
 };
