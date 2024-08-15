@@ -19,7 +19,7 @@ const config: Config = {
         }
       },
       fontFamily: {
-        display: 'Gabarito'
+        display: 'DM Sans'
       },
       animation: {
         scroll:

@@ -1,0 +1,60 @@
+{  "items" : [
+    {
+      "name": "Languages",
+      "skills": ["Java", "Javascript", "Typescript", "Python"]
+    },
+    {
+      "name": "Web Technologies",
+      "skills": [
+        "ReactJS",
+        "NextJS",
+        "ExpressJS",
+        "SpringBoot",
+        "TRPC",
+        "Django",
+        "HTML",
+        "NodeJS",
+        "Redux",
+        "CSS",
+        "TailwindCSS",
+        "Vercel",
+        "Kafka",
+        "RabbitMQ"
+      ]
+    },
+    {
+      "name": "Database Technologies",
+      "skills": [
+        "MongoDB",
+        "MySQL",
+        "PostgreSQL",
+        "Redis"
+      ]
+    },
+    {
+      "name": "Cloud & DevOps",
+      "skills": ["Docker", "Kubernetes" , "AWS" , "Terraform"]
+    },
+    {
+      "name": "Testing Frameworks",
+      "skills": ["Junit", "Mockito", "Jest", "Vitest"]
+    },
+    {
+      "name": "Libraries",
+      "skills": [
+        "Pandas",
+        "Numpy",
+        "Sklearn",
+        "Matplotlib",
+        "Tensorflow",
+        "OpenCV",
+        "Keras",
+        "Pytorch"
+      ]
+    },
+    {
+      "name": "Other Tools",
+      "skills": ["Git", "Figma", "Jenkins", "VMWare", "Linux"]
+    }
+  ]
+}

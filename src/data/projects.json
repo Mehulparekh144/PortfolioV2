@@ -1,5 +1,23 @@
 {
   "data": [
+  {
+    "name" : "Gather",
+    "desc" : "This project is about Gather, an all-in-one workspace chat application designed to enhance collaboration and streamline communication within organizations. It offers features such as real-time chat, seamless file sharing, and dynamic notifications, all built on a robust Spring Boot backend and a fast Next.js frontend. By utilizing advanced technologies like WebSockets and Redis caching, Gather provides a smooth and responsive experience to keep teams connected and productive.",
+    "tech" : [
+      "SpringBoot",
+      "NextJS",
+      "PostgreSQL",
+      "Hibernate",
+      "Microservices",
+      "Java",
+      "Typescript",
+      "TailwindCSS",
+      "Docker",
+      "Websockets",
+      "Redis"
+    ],
+    "git" : "https://github.com/Mehulparekh144/Gather"
+  },
     {
       "name": "Protrackr",
       "deploy": "https://protrackr-issue-tracker.vercel.app/",
