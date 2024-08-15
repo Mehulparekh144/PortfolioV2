@@ -21,7 +21,7 @@ export default function RootLayout({
       <link rel="icon" href="/images/images.ico" sizes="<generated>" />
       <body className={cn("min-h-screen antialiased", inter.className)}>
         <div className="min-h-screen px-12 md:px-32 lg:px-96 3xl:px-[36rem] py-16 text-zinc-100">
-          <nav className="flex gap-4 mb-6 md:mb-3 font-display justify-center md:justify-end">
+          <nav className="flex gap-4 mb-6 md:mb-3 font-display justify-start md:justify-end">
             <Link href={"/"} className="w-max cool-underline">
               home
             </Link>
