@@ -7,7 +7,7 @@ const About = () => {
   const socials = [
     {
       name: "LinkedIn",
-      link: "https://www.linkedin.com/in/mehulparekh/",
+      link: "https://www.linkedin.com/in/mehulparekh1/",
     },
     {
       name: "GitHub",
