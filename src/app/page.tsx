@@ -12,7 +12,7 @@ export default function Home() {
         <h1 className="text-2xl font-bold font-display">hey, I am Mehul. </h1>
         <p className="font-display text-base text-zinc-400">
           Hey there! I&apos;m Mehul Parekh, currently diving deep into my
-          Master's in Computer Science at Northeastern University's Khoury
+          Master&apos;s in Computer Science at Northeastern University&apos;s Khoury
           College. When I&apos;m not wrestling with code, I&apos;m either
           watching wrestling, catching a cricket match, or leveling up in video
           games. But honestly, my real jam is crafting cool, interactive
