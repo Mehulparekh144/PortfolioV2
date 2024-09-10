@@ -76,7 +76,7 @@ const skillIcons: Record<string, IconComponent | null> = {
   prisma: PrismaOriginal,
   supabase: SupabaseOriginal,
   framer: FramermotionOriginal,
-  swing : JavaPlainWordmark,
+  swing : JavaPlain,
 
 
   // Database Technologies
@@ -123,7 +123,6 @@ interface SkillBadgeProps {
 
 const SkillBadge: React.FC<SkillBadgeProps> = ({ skill }) => {
   const IconComponent = skillIcons[skill] || Code; // Fallback to Code icon if none found
-
   return (
     <div className="flex items-center font-display  bg-zinc-900 text-white rounded-md px-3 py-1 text-sm">
       <IconComponent className="w-5 h-5 inline-block mr-2" size={"15"} />

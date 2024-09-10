@@ -36,6 +36,14 @@
       "git": "https://github.com/Mehulparekh144/Issue-Tracker"
     },
     {
+      "name": "Stock Portfolio Management System",
+      "deploy": "",
+      "desc": "Developed a Java-based stock portfolio management application with Swing, utilizing design patterns such as Builder and Command, and adhering to SOLID principles of OOP. The system enables users to create, manage, and analyze stock portfolios, with key functionalities including portfolio creation, adding and saving shares, viewing total value and composition, and importing portfolios from CSV files. The system provides robust error handling for invalid operations, ensuring a seamless user experience. PS : The project is private in git due to academic integrity. Please contact me for the source code. ",
+      "tech": ["Java", "Swing"],
+      "img": "/stock_portfolio.png",
+      "git": "https://github.com/Mehulparekh144/Assignment-4.git"
+    },
+    {
       "name": "SoundBoom",
       "deploy": "https://soundboom.vercel.app/",
       "desc": "SoundBoom MERN Ecommerce is a web application built with the MERN stack that allows users to browse and purchase audio products. It includes features such as user authentication, shopping cart management, payment integration with Stripe, and search and filter functionality.",
@@ -92,14 +100,6 @@
       "tech": ["Python", "ArcGIS", "Sklearn", "Tensorflow", "OpenCV"],
       "img": "/pothole.PNG",
       "git": "https://github.com/Mehulparekh144/Pothole-Detection-using-Deep-Learning-and-ArcGIS.git"
-    },
-    {
-      "name": "Stock Portfolio Management System",
-      "deploy": "",
-      "desc": "Developed a Java-based stock portfolio management application with Swing, utilizing design patterns such as Builder and Command, and adhering to SOLID principles of OOP. The system enables users to create, manage, and analyze stock portfolios, with key functionalities including portfolio creation, adding and saving shares, viewing total value and composition, and importing portfolios from CSV files. The system provides robust error handling for invalid operations, ensuring a seamless user experience. PS : The project is private in git due to academic integrity. Please contact me for the source code. ",
-      "tech": ["Java", "Swing"],
-      "img": "/stock_portfolio.png",
-      "git": "https://github.com/Mehulparekh144/Assignment-4.git"
     }
 
   ]
