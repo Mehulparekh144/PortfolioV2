@@ -45,6 +45,7 @@ import {
   SupabaseOriginal,
   FramermotionOriginal,
   HibernateOriginal,
+  JavaPlainWordmark,
 } from "devicons-react";
 import { Code } from "lucide-react";
 
@@ -75,6 +76,7 @@ const skillIcons: Record<string, IconComponent | null> = {
   prisma: PrismaOriginal,
   supabase: SupabaseOriginal,
   framer: FramermotionOriginal,
+  swing : JavaPlainWordmark,
 
 
   // Database Technologies
