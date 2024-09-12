@@ -32,6 +32,7 @@ function Projects() {
                       <Link
                         target="_blank"
                         href={git}
+                        key={i}
                         className="bg-zinc-100 bg-opacity-20 backdrop-blur-3xl text-zinc-100 p-1.5 rounded-full hover:bg-opacity-5 transition-all"
                       >
                         <Github className="h-4 w-4" />
