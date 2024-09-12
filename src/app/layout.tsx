@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { Inter } from "next/font/google";
 import { cn } from "@/lib/utils";
+import AnimatedCursor from "react-animated-cursor";
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 export const metadata: Metadata = {
@@ -20,6 +21,19 @@ export default function RootLayout({
     <html lang="en">
       <link rel="icon" href="/images/images.ico" sizes="<generated>" />
       <body className={cn("min-h-screen antialiased", inter.className)}>
+        <AnimatedCursor
+          innerSize={8}
+          outerSize={35}
+          innerScale={1}
+          outerScale={2}
+          outerAlpha={0}
+          innerStyle={{
+            backgroundColor: "var(--cursor-color)",
+          }}
+          outerStyle={{
+            backgroundColor: "var(--cursor-color)",
+          }}
+        />
         <div className="min-h-screen px-12 md:px-32 lg:px-96 3xl:px-[36rem] py-16 text-zinc-100">
           <nav className="flex gap-4 mb-6 md:mb-3 font-display justify-start md:justify-end">
             <Link href={"/"} className="w-max cool-underline">
