@@ -1,23 +1,23 @@
 {
   "data": [
-  {
-    "name" : "Gather",
-    "desc" : "This project is about Gather, an all-in-one workspace chat application designed to enhance collaboration and streamline communication within organizations. It offers features such as real-time chat, seamless file sharing, and dynamic notifications, all built on a robust Spring Boot backend and a fast Next.js frontend. By utilizing advanced technologies like WebSockets and Redis caching, Gather provides a smooth and responsive experience to keep teams connected and productive.",
-    "tech" : [
-      "SpringBoot",
-      "NextJS",
-      "PostgreSQL",
-      "Hibernate",
-      "Microservices",
-      "Java",
-      "Typescript",
-      "TailwindCSS",
-      "Docker",
-      "Websockets",
-      "Redis"
-    ],
-    "git" : "https://github.com/Mehulparekh144/Gather"
-  },
+    {
+      "name": "Gather",
+      "desc": "This project is about Gather, an all-in-one workspace chat application designed to enhance collaboration and streamline communication within organizations. It offers features such as real-time chat, seamless file sharing, and dynamic notifications, all built on a robust Spring Boot backend and a fast Next.js frontend. By utilizing advanced technologies like WebSockets and Redis caching, Gather provides a smooth and responsive experience to keep teams connected and productive.",
+      "tech": [
+        "SpringBoot",
+        "NextJS",
+        "PostgreSQL",
+        "Hibernate",
+        "Microservices",
+        "Java",
+        "Typescript",
+        "TailwindCSS",
+        "Docker",
+        "Websockets",
+        "Redis"
+      ],
+      "git": ["https://github.com/Mehulparekh144/Gather"]
+    },
     {
       "name": "Protrackr",
       "deploy": "https://protrackr-issue-tracker.vercel.app/",
@@ -33,15 +33,30 @@
         "TailwindCSS"
       ],
       "img": "/protrackr.png",
-      "git": "https://github.com/Mehulparekh144/Issue-Tracker"
+      "git": ["https://github.com/Mehulparekh144/Issue-Tracker"]
     },
     {
       "name": "Stock Portfolio Management System",
       "deploy": "",
-      "desc": "Developed a Java-based stock portfolio management application with Swing, utilizing design patterns such as Builder and Command, and adhering to SOLID principles of OOP. The system enables users to create, manage, and analyze stock portfolios, with key functionalities including portfolio creation, adding and saving shares, viewing total value and composition, and importing portfolios from CSV files. The system provides robust error handling for invalid operations, ensuring a seamless user experience. PS : The project is private in git due to academic integrity. Please contact me for the source code. ",
+      "desc": "Developed a Java-based stock portfolio management application with Swing, utilizing design patterns such as Builder and Command, and adhering to SOLID principles of OOP. The system enables users to create, manage, and analyze stock portfolios, with key functionalities including portfolio creation, adding and saving shares, viewing total value and composition, and importing portfolios from CSV files. The system provides robust error handling for invalid operations, ensuring a seamless user experience. PS : The project is private in git due to academic integrity. Please contact me for the source code.",
       "tech": ["Java", "Swing"],
       "img": "/stock_portfolio.png",
-      "git": "https://github.com/Mehulparekh144/Assignment-4.git"
+      "git": ["https://github.com/Mehulparekh144/Assignment-4.git"]
+    },
+    {
+      "name": "MovieBuzz",
+      "deploy": "https://movie-buzz-frontend.vercel.app/",
+      "desc": "MovieBuzz is your ultimate movie hub! Explore the latest films, rate your favorites, and share your reviews. With roles for users, bloggers, and admins, MovieBuzz offers a dynamic platform for discovering and managing movie content. Enjoy a modern, responsive design built with the latest technologies.",
+      "tech": [
+        "React",
+        "Node.js",
+        "Express",
+        "MongoDB",
+        "Context API",
+        "Tailwind CSS"
+      ],
+      "img": "/moviebuzz.png",
+      "git": ["https://github.com/Mehulparekh144/MovieBuzz-Frontend" , "https://github.com/Mehulparekh144/MovieBuzz-Backend"]
     },
     {
       "name": "SoundBoom",
@@ -58,7 +73,7 @@
         "TailwindCSS"
       ],
       "img": "/soundboom.png",
-      "git": "https://github.com/Mehulparekh144/SoundBoom_MERN_Ecommerce"
+      "git": ["https://github.com/Mehulparekh144/SoundBoom_MERN_Ecommerce"]
     },
     {
       "name": "Job Linker",
@@ -75,7 +90,7 @@
         "TailwindCSS"
       ],
       "img": "/joblinker.png",
-      "git": "https://github.com/Mehulparekh144/Jobdeployer"
+      "git": ["https://github.com/Mehulparekh144/Jobdeployer"]
     },
     {
       "name": "Airglobe",
@@ -91,7 +106,7 @@
         "TailwindCSS"
       ],
       "img": "/airglobe.png",
-      "git": "https://github.com/Mehulparekh144/AirBNB-Clone-using-MERN-Stack"
+      "git": ["https://github.com/Mehulparekh144/AirBNB-Clone-using-MERN-Stack"]
     },
     {
       "name": "Pothole Detection System",
@@ -99,8 +114,9 @@
       "desc": "Constructed a CNN-based sequential model used to classify between potholes and smooth roads, also proposed VGG-16 for object detection, achieving an accuracy of 93%. Utilized image processing techniques on Washington DC maps to convert 80% of tiffs into training data for the MaskRCNN model. Experimented with models like YOLOv5 and ResNet50, achieving a 75% precision in ResNet50 after incorporating hyper-parameter tuning.",
       "tech": ["Python", "ArcGIS", "Sklearn", "Tensorflow", "OpenCV"],
       "img": "/pothole.PNG",
-      "git": "https://github.com/Mehulparekh144/Pothole-Detection-using-Deep-Learning-and-ArcGIS.git"
+      "git": [
+        "https://github.com/Mehulparekh144/Pothole-Detection-using-Deep-Learning-and-ArcGIS.git"
+      ]
     }
-
   ]
 }

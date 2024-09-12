@@ -26,13 +26,19 @@ function Projects() {
                     <ExternalLink className="h-4 w-4" />
                   </Link>
                 )}
-                <Link
-                  target="_blank"
-                  href={project.git}
-                  className="bg-zinc-100 bg-opacity-20 backdrop-blur-3xl text-zinc-100 p-1.5 rounded-full hover:bg-opacity-5 transition-all"
-                >
-                  <Github className="h-4 w-4" />
-                </Link>
+                {
+                  project.git && (
+                    project.git.map((git , i) => (
+                      <Link
+                        target="_blank"
+                        href={git}
+                        className="bg-zinc-100 bg-opacity-20 backdrop-blur-3xl text-zinc-100 p-1.5 rounded-full hover:bg-opacity-5 transition-all"
+                      >
+                        <Github className="h-4 w-4" />
+                      </Link>
+                    ))
+                  )
+                }
               </div>
             </div>
             <p className="text-zinc-400">{project.desc}</p>
