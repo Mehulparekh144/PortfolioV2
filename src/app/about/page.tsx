@@ -3,6 +3,12 @@ import { ArrowUpRight, GithubIcon, LinkedinIcon, MailIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { Metadata } from "next";
+import { Button } from "@nextui-org/react";
+
+export const metadata: Metadata = {
+	title: "About",
+};
 
 const About = () => {
 	const socials = [
@@ -88,11 +94,13 @@ const About = () => {
 
 	return (
 		<div>
-			<h1 className="text-2xl font-bold font-display ">About me 👦</h1>
+			<h1 className="text-2xl font-bold font-heading text-retro ">About me</h1>
 			<hr className="my-4" />
 			<Paragraph socials={socials} />
 			<Education universityData={universityData} />
-			<h2 className="text-xl font-bold font-display my-4">Work Experience</h2>
+			<h2 className="text-xl font-bold font-heading text-retro my-4">
+				Work Experience
+			</h2>
 			<div className="flex flex-col gap-2 w-full">
 				{experienceData.map((data, idx) => (
 					<div
@@ -134,7 +142,9 @@ export default About;
 function Education({ universityData }: { universityData: any[] }) {
 	return (
 		<div>
-			<h2 className="text-xl font-bold font-display mb-4">Education</h2>
+			<h2 className="text-xl font-bold font-heading text-retro mb-4">
+				Education
+			</h2>
 			<div className="flex flex-col gap-2 w-full">
 				{universityData.map((data, idx) => (
 					<div
@@ -182,7 +192,7 @@ function Paragraph({ socials }: { socials: any[] }) {
 	return (
 		<div className="flex flex-col-reverse md:flex-row gap-4">
 			<div>
-				<p className="text-zinc-300 m-0">
+				<p className="text-zinc-300 m-0 leading-tight">
 					I&apos;m Mehul Parekh, a tech enthusiast who moved from Mumbai to
 					Boston to pursue a Master&apos;s in Computer Science at Northeastern
 					University. My journey has been fueled by a passion for technology and
@@ -200,7 +210,7 @@ function Paragraph({ socials }: { socials: any[] }) {
 								url={social.link}
 							>
 								{social.name.toLowerCase()}
-								<ArrowUpRight className="w-5 h-5" />
+								<ArrowUpRight className="w-3 h-3 mb-1" />
 							</LinkPreview>{" "}
 						</li>
 					))}

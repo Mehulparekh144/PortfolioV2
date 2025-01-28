@@ -5,18 +5,24 @@ import { ArrowUpRight, Code } from "lucide-react";
 import SkillBadge from "@/components/SkillBadge";
 import { BentoGrid, BentoGridItem } from "@/components/ui/bento-grid";
 import { LinkPreview } from "@/components/ui/link-preview";
+import { Metadata } from "next";
 
 export default function Home() {
 	return (
 		<div>
 			<div className="flex flex-col gap-2">
-				<h1 className="text-2xl font-bold font-display">hey, I am Mehul. </h1>
-				<p className="font-display text-base text-zinc-400">
+				<h1 className="text-2xl font-bold font-heading text-retro">
+					hey, I am Mehul.{" "}
+				</h1>
+				<p className=" text-zinc-200 leading-tight">
 					Hey there! I&apos;m Mehul Parekh, currently working as a{" "}
-					<span className="font-semibold">Software Engineer Co-op</span> at{" "}
+					<span className="font-semibold text-retro">
+						Software Engineer Co-op
+					</span>{" "}
+					at{" "}
 					<LinkPreview
 						url={"https://www.curriculumassociates.com/"}
-						className="font-semibold underline underline-offset-2 text-background"
+						className="font-semibold underline underline-offset-2 text-retro"
 					>
 						Curriculum Associates
 					</LinkPreview>{" "}
@@ -30,13 +36,13 @@ export default function Home() {
 			</div>
 			<hr className="my-4 " />
 			<div>
-				<h1 className="text-xl font-bold font-display">
+				<h1 className="text-xl font-bold font-heading text-retro">
 					Skills I&apos;ve Picked up
 				</h1>
 				<div>
 					{skills.items.map((skill, idx) => (
 						<div className="my-4" key={idx}>
-							<h1 className="my-2">{skill.name}</h1>
+							<h1 className="my-2 font-heading text-retro">{skill.name}</h1>
 							<div className="flex gap-1 flex-wrap">
 								{skill.skills.map((s, i) => (
 									<SkillBadge key={i} skill={s.toLowerCase()} />

@@ -13,13 +13,15 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
+        retro: '#d41675',
         dark: {
           backgroud: "#212121",
           primary: "#1d1d1d",
         }
       },
       fontFamily: {
-        display: 'DM Sans'
+        heading: 'Silkscreen',
+        display: 'VT323'
       },
       animation: {
         scroll:
