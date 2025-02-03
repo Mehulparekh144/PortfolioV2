@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { Inter } from "next/font/google";
 import { cn } from "@/lib/utils";
-import AnimatedCursor from "react-animated-cursor";
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 import LenisScroll from "@/components/LenisScroll";
@@ -33,19 +32,6 @@ export default function RootLayout({
 				)}
 			>
 				<LenisScroll />
-				<AnimatedCursor
-					innerSize={8}
-					outerSize={35}
-					innerScale={1}
-					outerScale={2}
-					outerAlpha={0}
-					innerStyle={{
-						backgroundColor: "var(--cursor-color)",
-					}}
-					outerStyle={{
-						backgroundColor: "var(--cursor-color)",
-					}}
-				/>
 				<div className="min-h-screen max-w-2xl px-12 py-16 text-zinc-100">
 					<nav className="flex gap-4 mb-6 md:mb-3 font-display justify-start md:justify-end">
 						<Link href={"/"} className="w-max cool-underline">

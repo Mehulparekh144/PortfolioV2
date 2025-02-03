@@ -26,7 +26,10 @@ body {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	border: 15px solid #dfddb6;
+}
+
+body {
+	@apply lg:border-[30px] md:border-[15px] border-[#d5d3ac] border-solid border-4;
 }
 
 .cool-underline {
