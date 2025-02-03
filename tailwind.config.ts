@@ -13,7 +13,7 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        retro: '#d41675',
+        retro: '#fdfbd4',
         dark: {
           backgroud: "#212121",
           primary: "#1d1d1d",

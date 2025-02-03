@@ -28,7 +28,7 @@ export default function RootLayout({
 			<link rel="icon" href="/images/images.ico" sizes="<generated>" />
 			<body
 				className={cn(
-					"min-h-screen antialiased flex justify-center pixelated-border",
+					"min-h-screen antialiased flex justify-center backdrop-blur-md",
 					inter.className
 				)}
 			>

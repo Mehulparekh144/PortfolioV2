@@ -222,7 +222,7 @@ function Paragraph({ socials }: { socials: any[] }) {
 					quality={100}
 					fill
 					alt="profile"
-					className="rounded-md object-cover object-top"
+					className="rounded-md object-cover object-top pixel-border"
 				/>
 			</div>
 		</div>
