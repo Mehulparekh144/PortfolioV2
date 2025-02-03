@@ -11,9 +11,11 @@ export default function Home() {
 	return (
 		<div>
 			<div className="flex flex-col gap-2">
-				<h1 className="text-2xl font-bold font-heading text-retro">
-					hey, I am Mehul.{" "}
-				</h1>
+				<div className="flex items-end justify-between mt-3">
+					<h1 className="text-2xl font-bold font-heading text-retro">
+						hey, I am Mehul.{" "}
+					</h1>
+				</div>
 				<p className=" text-zinc-200 leading-tight">
 					Hey there! I&apos;m Mehul Parekh, currently working as a{" "}
 					<span className="font-semibold text-retro">

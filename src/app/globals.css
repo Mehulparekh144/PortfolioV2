@@ -29,7 +29,7 @@ body {
 }
 
 body {
-	@apply lg:border-[30px] md:border-[15px] border-[#d5d3ac] border-solid border-4;
+	@apply md:border-[15px] border-[#d5d3ac] border-solid border-4;
 }
 
 .cool-underline {
