@@ -28,7 +28,9 @@ export default function RootLayout({
 					inter.className,
 				)}
 			>
-				<div className="min-h-screen max-w-2xl px-12 py-16">{children}</div>
+				<div className="min-h-screen w-screen max-w-2xl px-4 py-8 md:px-12 md:py-16">
+					{children}
+				</div>
 			</body>
 		</html>
 	);

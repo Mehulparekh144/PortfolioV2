@@ -5,6 +5,7 @@ import ProjectsSection from "@/components/home/ProjectsSection";
 import ExperienceSection from "@/components/home/ExperienceSection";
 import Footer from "@/components/home/Footer";
 import projects from "../data/projects.json";
+import { ChevronRight } from "lucide-react";
 
 export default function Home() {
 	const topProjects = projects.data.slice(0, 5);
@@ -20,9 +21,9 @@ export default function Home() {
 				<ProjectsSection projects={topProjects} />
 				<Link
 					href="/projects"
-					className="text-retro/50 text-sm hover:underline inline-flex items-center gap-1"
+					className="text-retro/50 text-sm  hover:underline inline-flex items-center gap-1"
 				>
-					View All Projects →
+					View All Projects <ChevronRight className="w-4 h-4" />
 				</Link>
 			</div>
 			<ExperienceSection />
