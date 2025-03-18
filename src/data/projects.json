@@ -1,125 +1,125 @@
 {
-	"data": [
-		{
-			"name": "Gather",
-			"desc": "Gather is an all-in-one workspace chat application that enhances team collaboration through real-time messaging, file sharing, and dynamic notifications. Built with Spring Boot and Next.js, it leverages WebSockets for instant communication and Redis for caching to ensure high performance and scalability.",
-			"tech": [
-				"SpringBoot",
-				"NextJS",
-				"PostgreSQL",
-				"Hibernate",
-				"Microservices",
-				"Java",
-				"Typescript",
-				"TailwindCSS",
-				"Docker",
-				"Websockets",
-				"Redis"
-			],
-			"git": ["https://github.com/Mehulparekh144/Gather"]
-		},
-		{
-			"name": "Protrackr",
-			"deploy": "https://protrackr-issue-tracker.vercel.app/",
-			"desc": "Protrackr is a TRPC-powered issue tracking system that enables team creation, task assignment, and deadline management with priority-based workflows. Featuring NextJS 13, Prisma, and Next-Auth, it optimizes project transparency through detailed issue tracking and role-based access control.",
-			"tech": [
-				"NextJS",
-				"TRPC",
-				"Typescript",
-				"Prisma",
-				"PostgreSQL",
-				"shadCN",
-				"Next-Auth",
-				"TailwindCSS"
-			],
-			"img": "/protrackr.png",
-			"git": ["https://github.com/Mehulparekh144/Issue-Tracker"]
-		},
-		{
-			"name": "Stock Portfolio Management System",
-			"deploy": "",
-			"desc": "This Java Swing application enables users to create/manage stock portfolios with features like value tracking, CSV imports, and transaction logging. Designed using SOLID principles, it implements Builder and Command patterns for maintainable architecture and robust error handling.",
-			"tech": ["Java", "Swing"],
-			"img": "/stock_portfolio.png",
-			"git": ["https://github.com/Mehulparekh144/Assignment-4.git"]
-		},
-		{
-			"name": "MovieBuzz",
-			"deploy": "https://movie-buzz-frontend.vercel.app/",
-			"desc": "MovieBuzz is a full-stack platform where users explore films, rate/review movies, while admins manage content through role-based access. Built with React, Node.js, and MongoDB, it features a responsive UI with Tailwind CSS and state management via Context API.",
-			"tech": [
-				"React",
-				"Node.js",
-				"Express",
-				"MongoDB",
-				"Context API",
-				"Tailwind CSS"
-			],
-			"img": "/moviebuzz.png",
-			"git": [
-				"https://github.com/Mehulparekh144/MovieBuzz-Frontend",
-				"https://github.com/Mehulparekh144/MovieBuzz-Backend"
-			]
-		},
-		{
-			"name": "SoundBoom",
-			"deploy": "https://soundboom.vercel.app/",
-			"desc": "SoundBoom is a MERN stack e-commerce platform for audio gear featuring Stripe payments, cart management, and product filtering. It uses Redux for state management and offers secure user authentication with JWT tokens.",
-			"tech": [
-				"ReactJS",
-				"MongoDB",
-				"ExpressJS",
-				"NodeJS",
-				"Redux",
-				"Stripe",
-				"ContextAPI",
-				"TailwindCSS"
-			],
-			"img": "/soundboom.png",
-			"git": ["https://github.com/Mehulparekh144/SoundBoom_MERN_Ecommerce"]
-		},
-		{
-			"name": "Job Linker",
-			"deploy": "https://joblinker.vercel.app/",
-			"desc": "Job Linker connects job seekers and employers through resume uploads and job postings using Supabase integration. Developed with React/TypeScript and Zustand state management, it features animated UI components via Framer Motion.",
-			"tech": [
-				"ReactJS",
-				"Typescript",
-				"Supabase",
-				"ExpressJS",
-				"NodeJS",
-				"Zustand",
-				"Framer Motion",
-				"TailwindCSS"
-			],
-			"img": "/joblinker.png",
-			"git": ["https://github.com/Mehulparekh144/Jobdeployer"]
-		},
-		{
-			"name": "Airglobe",
-			"deploy": "https://airglobe.vercel.app/",
-			"desc": "Airglobe is an Airbnb clone enabling property bookings and host listings with Cloudinary image uploads. The MERN stack application features JWT authentication, Multer for file handling, and responsive Tailwind CSS layouts.",
-			"tech": [
-				"ReactJS",
-				"MongoDB",
-				"ExpressJS",
-				"NodeJS",
-				"Cloudinary",
-				"Multer",
-				"TailwindCSS"
-			],
-			"img": "/airglobe.png",
-			"git": ["https://github.com/Mehulparekh144/AirBNB-Clone-using-MERN-Stack"]
-		},
-		{
-			"name": "Pothole Detection System",
-			"deploy": "https://drive.google.com/file/d/1xtRY1FzZAEQOzOAumUIDb-RbxSKeyLRD/view?usp=sharing",
-			"desc": "This AI system detects potholes using CNN and VGG-16 models with 93% accuracy, processing geospatial data through ArcGIS. Implemented with TensorFlow and OpenCV, it compares YOLOv5 and ResNet50 models while optimizing hyperparameters for precision.",
-			"tech": ["Python", "ArcGIS", "Sklearn", "Tensorflow", "OpenCV"],
-			"img": "/pothole.PNG",
-			"git": [
-				"https://github.com/Mehulparekh144/Pothole-Detection-using-Deep-Learning-and-ArcGIS.git"
-			]
-		}
-	]
+  "data": [
+    {
+      "name": "Gather",
+      "desc": "A real-time team collaboration platform with chat, file sharing, and notifications powered by Spring Boot and WebSockets.",
+      "tech": [
+        "SpringBoot",
+        "NextJS",
+        "PostgreSQL",
+        "Hibernate",
+        "Microservices",
+        "Java",
+        "Typescript",
+        "TailwindCSS",
+        "Docker",
+        "Websockets",
+        "Redis"
+      ],
+      "git": ["https://github.com/Mehulparekh144/Gather"]
+    },
+    {
+      "name": "Protrackr",
+      "deploy": "https://protrackr-issue-tracker.vercel.app/",
+      "desc": "A TRPC-powered issue tracking system for teams to manage tasks, deadlines, and workflows with role-based access.",
+      "tech": [
+        "NextJS",
+        "TRPC",
+        "Typescript",
+        "Prisma",
+        "PostgreSQL",
+        "shadCN",
+        "Next-Auth",
+        "TailwindCSS"
+      ],
+      "img": "/protrackr.png",
+      "git": ["https://github.com/Mehulparekh144/Issue-Tracker"]
+    },
+    {
+      "name": "Stock Portfolio Management System",
+      "deploy": "",
+      "desc": "A Java Swing desktop app for creating and managing stock portfolios with value tracking and transaction logging.",
+      "tech": ["Java", "Swing"],
+      "img": "/stock_portfolio.png",
+      "git": ["https://github.com/Mehulparekh144/Assignment-4.git"]
+    },
+    {
+      "name": "MovieBuzz",
+      "deploy": "https://movie-buzz-frontend.vercel.app/",
+      "desc": "A full-stack movie platform for exploring films, writing reviews, and managing content with role-based access.",
+      "tech": [
+        "React",
+        "Node.js",
+        "Express",
+        "MongoDB",
+        "Context API",
+        "Tailwind CSS"
+      ],
+      "img": "/moviebuzz.png",
+      "git": [
+        "https://github.com/Mehulparekh144/MovieBuzz-Frontend",
+        "https://github.com/Mehulparekh144/MovieBuzz-Backend"
+      ]
+    },
+    {
+      "name": "SoundBoom",
+      "deploy": "https://soundboom.vercel.app/",
+      "desc": "A MERN stack e-commerce platform for audio gear with Stripe payments and Redux-powered cart management.",
+      "tech": [
+        "ReactJS",
+        "MongoDB",
+        "ExpressJS",
+        "NodeJS",
+        "Redux",
+        "Stripe",
+        "ContextAPI",
+        "TailwindCSS"
+      ],
+      "img": "/soundboom.png",
+      "git": ["https://github.com/Mehulparekh144/SoundBoom_MERN_Ecommerce"]
+    },
+    {
+      "name": "Job Linker",
+      "deploy": "https://joblinker.vercel.app/",
+      "desc": "A job portal connecting seekers and employers with resume uploads and job postings using Supabase and Framer Motion.",
+      "tech": [
+        "ReactJS",
+        "Typescript",
+        "Supabase",
+        "ExpressJS",
+        "NodeJS",
+        "Zustand",
+        "Framer Motion",
+        "TailwindCSS"
+      ],
+      "img": "/joblinker.png",
+      "git": ["https://github.com/Mehulparekh144/Jobdeployer"]
+    },
+    {
+      "name": "Airglobe",
+      "deploy": "https://airglobe.vercel.app/",
+      "desc": "An Airbnb clone built with MERN stack featuring property bookings, host listings, and Cloudinary image uploads.",
+      "tech": [
+        "ReactJS",
+        "MongoDB",
+        "ExpressJS",
+        "NodeJS",
+        "Cloudinary",
+        "Multer",
+        "TailwindCSS"
+      ],
+      "img": "/airglobe.png",
+      "git": ["https://github.com/Mehulparekh144/AirBNB-Clone-using-MERN-Stack"]
+    },
+    {
+      "name": "Pothole Detection System",
+      "deploy": "https://drive.google.com/file/d/1xtRY1FzZAEQOzOAumUIDb-RbxSKeyLRD/view?usp=sharing",
+      "desc": "An AI-powered system using CNN and VGG-16 models to detect potholes with 93% accuracy and ArcGIS integration.",
+      "tech": ["Python", "ArcGIS", "Sklearn", "Tensorflow", "OpenCV"],
+      "img": "/pothole.PNG",
+      "git": [
+        "https://github.com/Mehulparekh144/Pothole-Detection-using-Deep-Learning-and-ArcGIS.git"
+      ]
+    }
+  ]
 }

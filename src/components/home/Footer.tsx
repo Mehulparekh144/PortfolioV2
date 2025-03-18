@@ -7,7 +7,7 @@ export default function Footer() {
 		<footer className="mt-12 pt-8 border-t border-gray-200 px-4 sm:px-6 lg:px-8">
 			<div className="flex flex-col sm:flex-row justify-between items-center gap-4 sm:gap-0">
 				<div className="text-sm text-gray-600 text-center sm:text-left">
-					© 2024 Mehul Parekh. All rights reserved.
+					© 2024 Mehul Parekh. <br /> All rights reserved.
 				</div>
 				<div className="flex gap-4 items-center">
 					<Link

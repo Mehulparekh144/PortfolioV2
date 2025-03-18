@@ -46,19 +46,8 @@ export default function ProjectCard({
 					)}
 				</div>
 			</div>
-			<p className="text-gray-600 text-sm my-2 line-clamp-2">
-				{desc.split(".")[0]}.
-			</p>
-			<div className="flex gap-2 flex-wrap">
-				{tech.map((techItem) => (
-					<span
-						key={`${name}-${techItem}`}
-						className="text-sm bg-gray-100 px-3 py-1 rounded-full"
-					>
-						{techItem}
-					</span>
-				))}
-			</div>
+			<p className="text-gray-600 text-sm my-2 line-clamp-2">{desc}</p>
+			<p className="text-xs text-gray-500 leading-5">{tech.join("  •  ")}</p>
 		</Card>
 	);
 }
