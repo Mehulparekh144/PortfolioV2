@@ -1,6 +1,7 @@
 "use client";
 import { ChevronsRight } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 const highlights = [
 	{
@@ -41,6 +42,18 @@ export default function HeroSection() {
 						hey, I am Mehul.{" "}
 					</h1>
 				</div>
+			</div>
+			<div className="text-zinc-600 text-sm leading-relaxed">
+				<div className="h-2 w-2 bg-green-500 rounded-full inline-block animate-pulse mr-2" />
+				Currently working on{" "}
+				<Link
+					className="font-semibold text-sm underline text-retro"
+					target="_blank"
+					href="https://github.com/Mehulparekh144/algo-akhada"
+				>
+					AlgoAkhada
+				</Link>{" "}
+				🧑‍💻
 			</div>
 			<div className="space-y-3">
 				<p className="text-zinc-600 text-sm leading-relaxed">
