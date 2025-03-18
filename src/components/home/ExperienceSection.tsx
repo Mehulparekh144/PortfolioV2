@@ -16,7 +16,7 @@ export default function ExperienceSection() {
 					</p>
 				</Card>
 				<Card>
-					<h3 className="font-bold">Master's in Computer Science</h3>
+					<h3 className="font-bold">Master&apos;s in Computer Science</h3>
 					<p className="text-gray-600 text-sm">
 						Northeastern University • Jan 2024 - Present
 					</p>

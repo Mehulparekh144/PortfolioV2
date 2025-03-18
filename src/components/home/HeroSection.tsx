@@ -20,7 +20,7 @@ const highlights = [
 	},
 	{
 		id: "hobby",
-		text: "When not coding, you'll find me geeking out over professional wrestling",
+		text: "When not coding, you&apos;ll find me geeking out over professional wrestling",
 		emoji: "🎮",
 	},
 ];
