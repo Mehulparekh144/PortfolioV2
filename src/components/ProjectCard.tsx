@@ -46,7 +46,7 @@ export default function ProjectCard({
 					)}
 				</div>
 			</div>
-			<p className="text-gray-600 text-sm my-2 line-clamp-2">{desc}</p>
+			<p className="text-gray-600 text-sm my-2">{desc}</p>
 			<p className="text-xs text-gray-500 leading-5">{tech.join("  •  ")}</p>
 		</Card>
 	);
