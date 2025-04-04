@@ -49,9 +49,9 @@ export default function HeroSection() {
 				<Link
 					className="font-semibold text-sm underline text-retro"
 					target="_blank"
-					href="https://github.com/Mehulparekh144/algo-akhada"
+					href="https://github.com/sysdesignai/"
 				>
-					AlgoAkhada
+					SysDesign.ai
 				</Link>{" "}
 				🧑‍💻
 			</div>
