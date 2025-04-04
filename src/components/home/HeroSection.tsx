@@ -43,18 +43,6 @@ export default function HeroSection() {
 					</h1>
 				</div>
 			</div>
-			<div className="text-zinc-600 text-sm leading-relaxed">
-				<div className="h-2 w-2 bg-green-500 rounded-full inline-block animate-pulse mr-2" />
-				Currently working on{" "}
-				<Link
-					className="font-semibold text-sm underline text-retro"
-					target="_blank"
-					href="https://github.com/sysdesignai/"
-				>
-					SysDesign.ai
-				</Link>{" "}
-				🧑‍💻
-			</div>
 			<div className="space-y-3">
 				<p className="text-zinc-600 text-sm leading-relaxed">
 					Hey there! I&apos;m Mehul Parekh, a tech enthusiast from Mumbai who
