@@ -36,32 +36,20 @@ export default function HeroSection() {
 						alt="Logo"
 						width={64}
 						height={64}
-						className="object-contain -ml-2"
+						className="object-contain -ml-2 filter invert"
 					/>
 					<h1 className="text-2xl font-bold font-heading text-retro">
 						hey, I am Mehul.{" "}
 					</h1>
 				</div>
 			</div>
-			<div className="text-zinc-600 text-sm leading-relaxed">
-				<div className="h-2 w-2 bg-green-500 rounded-full inline-block animate-pulse mr-2" />
-				Currently working on{" "}
-				<Link
-					className="font-semibold text-sm underline text-retro"
-					target="_blank"
-					href="https://github.com/sysdesignai/"
-				>
-					SysDesign.ai
-				</Link>{" "}
-				🧑‍💻
-			</div>
 			<div className="space-y-3">
-				<p className="text-zinc-600 text-sm leading-relaxed">
+				<p className="text-zinc-400 text-sm leading-relaxed">
 					Hey there! I&apos;m Mehul Parekh, a tech enthusiast from Mumbai who
 					made my way to Boston 🚀 Currently pursuing my Master&apos;s in
 					Computer Science at Northeastern University&apos;s Khoury College.
 				</p>
-				<div className="space-y-2 text-zinc-600 text-sm">
+				<div className="space-y-2 text-zinc-400 text-sm">
 					{highlights.map((item) => (
 						<div key={item.id} className="flex items-center gap-2">
 							<ChevronsRight className="w-4 h-4 flex-shrink-0" />

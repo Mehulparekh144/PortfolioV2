@@ -19,7 +19,7 @@ export default function ProjectCard({
 	deploy,
 }: ProjectCardProps) {
 	return (
-		<Card>
+		<Card className="bg-zinc-900 border-zinc-700">
 			<div className="flex items-center justify-between mb-2">
 				<h3 className="font-bold text-lg truncate">{name}</h3>
 				<div className="flex gap-2">
@@ -29,7 +29,7 @@ export default function ProjectCard({
 							href={gitUrl}
 							target="_blank"
 							rel="noopener noreferrer"
-							className="text-gray-600 hover:text-retro"
+							className="text-zinc-400 hover:text-retro"
 						>
 							<Github className="w-4 h-4" />
 						</Link>
@@ -39,15 +39,15 @@ export default function ProjectCard({
 							href={deploy}
 							target="_blank"
 							rel="noopener noreferrer"
-							className="text-gray-600 hover:text-retro"
+							className="text-gray-400 hover:text-retro"
 						>
 							<ExternalLink className="w-4 h-4" />
 						</Link>
 					)}
 				</div>
 			</div>
-			<p className="text-gray-600 text-sm my-2">{desc}</p>
-			<p className="text-xs text-gray-500 leading-5">{tech.join("  •  ")}</p>
+			<p className="text-zinc-400 text-sm my-2">{desc}</p>
+			<p className="text-xs text-zinc-400 leading-5">{tech.join("  •  ")}</p>
 		</Card>
 	);
 }

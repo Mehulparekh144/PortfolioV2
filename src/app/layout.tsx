@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { Inter } from "next/font/google";
+import { Outfit } from "next/font/google";
 import { cn } from "@/lib/utils";
 
 export const metadata: Metadata = {
@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 		"Portfolio of Mehul Parekh - Software Engineer and Web Developer",
 };
 
-const inter = Inter({ subsets: ["latin"] });
+const outfit = Outfit({ subsets: ["latin"] });
 
 export default function RootLayout({
 	children,
@@ -24,11 +24,11 @@ export default function RootLayout({
 			<link rel="icon" href="/images/icon.png" sizes="<generated>" />
 			<body
 				className={cn(
-					"min-h-screen antialiased flex justify-center",
-					inter.className,
+					"min-h-screen antialiased flex justify-center ",
+					outfit.className,
 				)}
 			>
-				<div className="min-h-screen w-screen max-w-2xl px-4 py-8 md:px-12 md:py-16">
+				<div className="min-h-screen w-screen max-w-xl px-4 py-8 md:py-16">
 					{children}
 				</div>
 			</body>

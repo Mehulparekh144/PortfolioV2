@@ -26,10 +26,10 @@ export default function SkillsSection() {
 			<div className="space-y-4">
 				{primarySkills.items.map((skill) => (
 					<div key={skill.name}>
-						<h3 className="text-sm font-medium text-zinc-800 mb-1">
+						<h3 className="text-sm font-medium text-zinc-100 mb-1">
 							{skill.name}
 						</h3>
-						<p className="text-xs text-gray-600">
+						<p className="text-xs text-zinc-400">
 							{skill.skills.join("  •  ")}
 						</p>
 					</div>

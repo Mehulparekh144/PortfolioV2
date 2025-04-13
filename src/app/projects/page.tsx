@@ -17,7 +17,7 @@ export default function ProjectsPage() {
 				</h1>
 				<Link
 					href="/"
-					className="text-gray-600 flex items-center text-sm hover:text-retro"
+					className="text-zinc-400 flex items-center text-sm hover:text-retro"
 				>
 					<ChevronLeft className="w-4 h-4" /> Back to Home
 				</Link>

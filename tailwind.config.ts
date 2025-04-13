@@ -13,15 +13,11 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        retro: '#000000',
+        retro: '#FFFFFF',
         dark: {
           background: "#212121",
           primary: "#1d1d1d",
         }
-      },
-      fontFamily: {
-        heading: 'Space Mono',
-        display: 'Inter'
       },
       animation: {
         scroll:
