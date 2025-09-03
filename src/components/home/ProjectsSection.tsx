@@ -1,5 +1,4 @@
 "use client";
-import Link from "next/link";
 import ProjectCard from "@/components/ProjectCard";
 
 export default function ProjectsSection({
