@@ -1,6 +1,31 @@
 {
 	"data": [
 		{
+			"name" : "Strata",
+			"desc" : "Strata is a next‑generation, streaming‑first distributed datastore. It combines the speed of in‑memory systems with the durability of Pebble (LSM engine), and exposes Redis‑like primitives over gRPC (RESP support coming soon).",
+			"tech": [
+				"Go",
+				"Redis",
+				"gRPC",
+				"RESP",
+				"Pebble"
+			],
+			"git": ["https://github.com/Mehulparekh144/strata"]
+		},
+		{
+			"name" : "Haru",
+			"desc" : "Haru is an AI‑driven accountability app designed to reinforce habit‑building through proof‑based daily check‑ins. It emphasizes simplicity, consistency, and integrity by replacing gamified tracking with calm, honest progress validation.",
+			"tech": [
+				"NextJS",
+				"TailwindCSS",
+				"Supabase",
+				"AI-SDK",
+				"Framer Motion"
+			],
+			"git": ["https://github.com/Mehulparekh144/haru"],
+			"deploy": "https://bloomwithharu.vercel.app/"
+		},
+		{
 			"name": "Gather",
 			"desc": "A real-time team collaboration platform with chat, file sharing, and notifications powered by Spring Boot and WebSockets.",
 			"tech": [
