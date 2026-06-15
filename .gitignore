@@ -34,3 +34,7 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# private reference files
+claude-inspo/
+mehul_portfolio_context.md
