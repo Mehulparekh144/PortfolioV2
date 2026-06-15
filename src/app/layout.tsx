@@ -1,18 +1,23 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { Outfit } from "next/font/google";
+import { JetBrains_Mono } from "next/font/google";
 import { cn } from "@/lib/utils";
+import { Providers } from "@/components/providers/provider";
+import TopBar from "@/components/TopBar";
 
 export const metadata: Metadata = {
 	title: {
 		default: "Mehul Parekh",
 		template: "%s | Mehul Parekh",
 	},
-	description:
-		"Portfolio of Mehul Parekh - Software Engineer and Web Developer",
+	description: "Software Engineer at Meta — Instagram Interactive Media",
 };
 
-const outfit = Outfit({ subsets: ["latin"] });
+const jetbrainsMono = JetBrains_Mono({
+	subsets: ["latin"],
+	display: "swap",
+	variable: "--font-mono",
+});
 
 export default function RootLayout({
 	children,
@@ -20,17 +25,23 @@ export default function RootLayout({
 	children: React.ReactNode;
 }) {
 	return (
-		<html lang="en">
-			<link rel="icon" href="/images/icon.png" sizes="<generated>" />
+		<html lang="en" className="dark">
+			<head>
+				<link rel="icon" href="/images/icon.png" sizes="any" />
+			</head>
 			<body
 				className={cn(
-					"min-h-screen antialiased flex justify-center ",
-					outfit.className,
+					"min-h-screen antialiased bg-terminal-bg text-retro",
+					jetbrainsMono.variable,
+					"font-mono",
 				)}
 			>
-				<div className="min-h-screen w-screen max-w-xl px-4 py-8 md:py-16">
-					{children}
-				</div>
+				<Providers>
+					<TopBar />
+					<div className="min-h-screen w-full max-w-3xl mx-auto px-6 py-12 md:py-20">
+						{children}
+					</div>
+				</Providers>
 			</body>
 		</html>
 	);

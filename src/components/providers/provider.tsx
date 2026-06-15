@@ -1,14 +1,22 @@
 "use client";
 
-import { NextUIProvider } from "@nextui-org/react";
-import { ThemeProvider as NextThemesProvider } from "next-themes";
+import { useEffect } from "react";
+import Lenis from "lenis";
 
 export function Providers({ children }: { children: React.ReactNode }) {
-  return (
-    <NextUIProvider>
-      <NextThemesProvider defaultTheme="dark" attribute="class">
-        {children}
-      </NextThemesProvider>
-    </NextUIProvider>
-  );
+  useEffect(() => {
+    const lenis = new Lenis();
+    let animFrameId: number;
+    const raf = (time: number) => {
+      lenis.raf(time);
+      animFrameId = requestAnimationFrame(raf);
+    };
+    animFrameId = requestAnimationFrame(raf);
+    return () => {
+      cancelAnimationFrame(animFrameId);
+      lenis.destroy();
+    };
+  }, []);
+
+  return <>{children}</>;
 }

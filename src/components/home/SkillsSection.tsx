@@ -1,40 +1,46 @@
 "use client";
 
-const primarySkills = {
-	items: [
-		{
-			name: "Core Technologies",
-			skills: ["ReactJS", "NextJS", "TypeScript", "Java", "Python", "NodeJS"],
-		},
-		{
-			name: "Backend & Database",
-			skills: ["SpringBoot", "PostgreSQL", "MongoDB", "ExpressJS"],
-		},
-		{
-			name: "DevOps & Cloud",
-			skills: ["Docker", "AWS", "Git", "Jenkins"],
-		},
-	],
-};
+import { AnimatedSection } from "@/components/AnimatedSection";
+
+const skills = [
+  {
+    label: "//languages",
+    items: ["Java", "TypeScript", "Go", "Python", "SQL", "Hack"],
+  },
+  {
+    label: "//backend & infra",
+    items: ["Spring Boot", "Next.js", "Node.js", "PostgreSQL", "Redis", "Kafka", "Docker", "Kubernetes", "AWS"],
+  },
+  {
+    label: "//tools & testing",
+    items: ["Git", "Figma", "JUnit", "Vitest", "Terraform", "Jenkins"],
+  },
+];
 
 export default function SkillsSection() {
-	return (
-		<div>
-			<h2 className="text-xl font-bold font-heading text-retro mb-4">
-				Primary Skills
-			</h2>
-			<div className="space-y-4">
-				{primarySkills.items.map((skill) => (
-					<div key={skill.name}>
-						<h3 className="text-sm font-medium text-zinc-100 mb-1">
-							{skill.name}
-						</h3>
-						<p className="text-xs text-zinc-400">
-							{skill.skills.join("  •  ")}
-						</p>
-					</div>
-				))}
-			</div>
-		</div>
-	);
+  return (
+    <section className="space-y-4">
+      <div className="section-divider" />
+      <p className="comment-label text-xs">{"//skills"}</p>
+      <AnimatedSection>
+        <div className="space-y-3">
+          {skills.map((group) => (
+            <div key={group.label} className="grid grid-cols-1 md:grid-cols-[180px_1fr] gap-2 md:gap-6">
+              <p className="text-xs font-mono text-terminal-comment">{group.label}</p>
+              <div className="flex flex-wrap gap-1.5">
+                {group.items.map((item) => (
+                  <span
+                    key={item}
+                    className="border border-terminal-border text-xs font-mono text-retro/70 px-2 py-0.5 rounded-sm"
+                  >
+                    {item}
+                  </span>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+      </AnimatedSection>
+    </section>
+  );
 }

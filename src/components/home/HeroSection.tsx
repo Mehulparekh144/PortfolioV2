@@ -1,113 +1,66 @@
 "use client";
-import { ChevronsRight } from "lucide-react";
-import Image from "next/image";
-import Link from "next/link";
 
-const highlights = [
-  {
-    id: "role",
-    text: "Worked as a",
-    highlight: "Software Engineer Intern",
-    after: "at Meta",
-  },
-  {
-    id: "role",
-    text: "Worked as a",
-    highlight: "Software Engineer Co-op",
-    after: "at Curriculum Associates",
-  },
-  {
-    id: "roles",
-    text: "Student and Teaching Assistant by day, Full Stack Developer by night",
-    emoji: "💻",
-  },
-  {
-    id: "passion",
-    text: "Passionate about building cool stuff and exploring new tech",
-  },
-  {
-    id: "hobby",
-    text: "When not coding, you'll find me geeking out over professional wrestling",
-    emoji: "🎮",
-  },
-];
+import { motion } from "framer-motion";
+import { staggerContainer, charReveal } from "@/lib/animations";
 
-const currentActivities = [
-  {
-    id: "learning",
-    text: "Currently learning Go and building some exciting projects",
-    emoji: "🚀",
-  },
-  {
-    id: "system-design",
-    text: "Diving deep into system design and architecture",
-    emoji: "🏗️",
-  },
-  {
-    id: "low-level",
-    text: "Exploring low-level programming and systems",
-    emoji: "⚙️",
-  },
-];
+const nameTokens = ["<", "Mehul", " ", "Parekh", ">"];
 
 export default function HeroSection() {
   return (
-    <div className="flex flex-col gap-4">
-      <div className="flex items-center justify-between mt-3">
-        <div className="flex items-center w-full gap-3">
-          <Image
-            src="/images/logo.png"
-            alt="Logo"
-            width={64}
-            height={64}
-            className="object-contain -ml-2 filter invert"
-          />
-          <h1 className="text-2xl font-bold font-heading text-retro">
-            hey, I am Mehul.{" "}
-          </h1>
-        </div>
-      </div>
-      <div className="space-y-3">
-        <p className="text-zinc-400 text-sm leading-relaxed">
-          Hey there! I&apos;m Mehul Parekh, a tech enthusiast from Mumbai who
-          made my way to Boston 🚀 Currently pursuing my Master&apos;s in
-          Computer Science at Northeastern University&apos;s Khoury College.
-        </p>
-        <div className="space-y-2 text-zinc-400 text-sm">
-          {highlights.map((item) => (
-            <div key={item.id} className="flex items-center gap-2">
-              <ChevronsRight className="w-4 h-4 flex-shrink-0" />
-              <span className="text-sm">
-                {item.text}{" "}
-                {item.highlight && (
-                  <span className="font-semibold text-sm text-retro">
-                    {item.highlight}
-                  </span>
-                )}{" "}
-                {item.after}
-                {item.emoji && ` ${item.emoji}`}
-              </span>
-            </div>
+    <section className="space-y-6 pt-4">
+      <div className="space-y-1.5">
+        <motion.h1
+          variants={staggerContainer}
+          initial="hidden"
+          animate="visible"
+          className="text-3xl md:text-4xl font-mono font-bold text-retro leading-tight tracking-tight"
+        >
+          {nameTokens.map((token, i) => (
+            <motion.span
+              key={i}
+              variants={charReveal}
+              className={
+                token === "<" || token === ">"
+                  ? "text-terminal-accent"
+                  : ""
+              }
+            >
+              {token}
+            </motion.span>
           ))}
-        </div>
+        </motion.h1>
 
-        {/* What I'm up to section */}
-        <div className="pt-2">
-          <h3 className="text-sm font-semibold text-retro mb-2">
-            What I&apos;m up to:
-          </h3>
-          <div className="space-y-2 text-zinc-400 text-sm">
-            {currentActivities.map((item) => (
-              <div key={item.id} className="flex items-center gap-2">
-                <ChevronsRight className="w-4 h-4 flex-shrink-0" />
-                <span className="text-sm">
-                  {item.text} {item.emoji}
-                </span>
-              </div>
-            ))}
-          </div>
-        </div>
+        <motion.p
+          initial={{ opacity: 0, y: 6 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.35, duration: 0.4 }}
+          className="comment-label text-sm"
+        >
+          {"//swe @ meta"} &bull; instagram interactive media
+        </motion.p>
       </div>
-    </div>
+
+      <motion.div
+        initial={{ opacity: 0, y: 8 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.5, duration: 0.4 }}
+        className="space-y-3"
+      >
+        <p className="comment-label text-xs mb-2">{"//about"}</p>
+        <p className="text-sm text-retro/70 leading-relaxed max-w-2xl">
+          I&apos;m a product-oriented engineer who uses AI to take ideas from{" "}
+          <span className="text-retro/90 font-semibold">0 to 1</span> and{" "}
+          <span className="text-retro/90 font-semibold">1 to 100</span> —
+          building fast, measuring what matters, and shipping things people
+          actually use.
+        </p>
+        <p className="text-sm text-retro/70 leading-relaxed max-w-2xl">
+          Currently at Meta driving retention and social connection through
+          Interactive Media on Instagram. Previously co-oped at Curriculum
+          Associates. 4.0 GPA MS CS at Northeastern. I write here about what
+          I&apos;m building and learning along the way.
+        </p>
+      </motion.div>
+    </section>
   );
 }

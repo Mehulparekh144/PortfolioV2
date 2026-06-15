@@ -3,14 +3,18 @@
 @tailwind utilities;
 
 :root {
-	--foreground-rgb: 249, 250, 251;
-	--background-rgb: 37, 37, 38;
+	--foreground-rgb: 232, 232, 232;
+	--background-rgb: 26, 26, 26;
+	--color-comment: #5a5a6e;
+	--color-accent: #7c6af7;
+	--color-accent-blue: #4f8ef7;
 }
 
 body {
 	color: rgb(var(--foreground-rgb));
 	background-color: rgb(var(--background-rgb));
 	position: relative;
+	font-family: var(--font-mono), 'JetBrains Mono', monospace;
 }
 
 body::before {
@@ -20,29 +24,32 @@ body::before {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background-image: radial-gradient(circle, #000 1px, transparent 1px);
-	background-size: 20px 20px;
-	opacity: 0.05;
+	background:
+		radial-gradient(ellipse 700px 500px at 0% 20%, rgba(124, 106, 247, 0.055) 0%, transparent 70%),
+		radial-gradient(ellipse 600px 400px at 100% 80%, rgba(79, 142, 247, 0.045) 0%, transparent 70%);
 	pointer-events: none;
 	z-index: 0;
 }
 
-@keyframes retroGlow {
-	0% {
-		border-image-source: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"><rect width="12" height="12" fill="%236d28d9" /></svg>');
-	}
-	50% {
-		border-image-source: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"><rect width="12" height="12" fill="%238b5cf6" /></svg>'); /* Lighter shade for glow */
-	}
-	100% {
-		border-image-source: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"><rect width="12" height="12" fill="%236d28d9" /></svg>');
-	}
+/* Utility classes */
+.comment-label {
+	font-family: var(--font-mono), monospace;
+	font-size: 0.75rem;
+	letter-spacing: 0.05em;
+	color: var(--color-comment);
+}
+
+.section-divider {
+	border-top: 1px solid #2a2a2a;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
 }
 
 .cool-underline {
-	@apply relative before:absolute before:bottom-0 before:left-0 before:w-0 before:h-[2px] before:bg-current before:transition-all before:duration-300 hover:before:w-full;
+	@apply relative before:absolute before:bottom-0 before:left-0 before:w-0 before:h-[1px] before:bg-current before:transition-all before:duration-300 hover:before:w-full;
 }
 
+/* Lenis smooth scroll */
 html {
 	--cursor-color: #ffffff60;
 }
@@ -66,4 +73,24 @@ html.lenis body {
 
 .lenis.lenis-smooth iframe {
 	pointer-events: none;
+}
+
+/* Blog prose overrides for dark terminal theme */
+.prose {
+	--tw-prose-body: #c8c8c8;
+	--tw-prose-headings: #e8e8e8;
+	--tw-prose-lead: #a0a0a0;
+	--tw-prose-links: #7c6af7;
+	--tw-prose-bold: #e8e8e8;
+	--tw-prose-counters: #6b6b6b;
+	--tw-prose-bullets: #5a5a6e;
+	--tw-prose-hr: #2a2a2a;
+	--tw-prose-quotes: #c8c8c8;
+	--tw-prose-quote-borders: #2a2a2a;
+	--tw-prose-captions: #6b6b6b;
+	--tw-prose-code: #e8e8e8;
+	--tw-prose-pre-code: #e8e8e8;
+	--tw-prose-pre-bg: #222222;
+	--tw-prose-th-borders: #2a2a2a;
+	--tw-prose-td-borders: #2a2a2a;
 }

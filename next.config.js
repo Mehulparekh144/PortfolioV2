@@ -1,8 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  transpilePackages: ['lenis'],
   images: {
     domains: [
-      "api.microlink.io", // Microlink Image Preview
+      "api.microlink.io",
     ],
   },
 }

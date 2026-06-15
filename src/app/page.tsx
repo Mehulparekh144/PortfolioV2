@@ -4,30 +4,69 @@ import SkillsSection from "@/components/home/SkillsSection";
 import ProjectsSection from "@/components/home/ProjectsSection";
 import ExperienceSection from "@/components/home/ExperienceSection";
 import Footer from "@/components/home/Footer";
+import BlogCard from "@/components/blog/BlogCard";
+import { BlurFade } from "@/components/ui/blur-fade";
+import { AnimatedSection } from "@/components/AnimatedSection";
 import projects from "../data/projects.json";
-import { ChevronRight } from "lucide-react";
+import { getAllPosts } from "@/lib/blog";
 
-export default function Home() {
-	const topProjects = projects.data.slice(0, 5);
+export default async function Home() {
+  const featuredProjects = projects.data.slice(0, 6);
+  const recentPosts = await getAllPosts().then((posts) => posts.slice(0, 3));
 
-	return (
-		<div className="space-y-12">
-			<HeroSection />
-			<SkillsSection />
-			<div className="space-y-4">
-				<h2 className="text-xl font-bold font-heading text-retro mb-4">
-					Featured Projects
-				</h2>
-				<ProjectsSection projects={topProjects} />
-				<Link
-					href="/projects"
-					className="text-retro/50 text-sm  hover:underline inline-flex items-center gap-1"
-				>
-					View All Projects <ChevronRight className="w-4 h-4" />
-				</Link>
-			</div>
-			<ExperienceSection />
-			<Footer />
-		</div>
-	);
+  return (
+    <div className="space-y-16">
+      <HeroSection />
+
+      <ExperienceSection />
+
+      <AnimatedSection>
+        <section className="space-y-4">
+          <div className="section-divider" />
+          <div className="flex items-center justify-between">
+            <p className="comment-label text-xs">{"//projects"}</p>
+            <Link
+              href="/projects"
+              className="text-xs font-mono text-terminal-muted hover:text-retro transition-colors cool-underline"
+            >
+              {"// view-all →"}
+            </Link>
+          </div>
+          <ProjectsSection projects={featuredProjects} />
+        </section>
+      </AnimatedSection>
+
+      <AnimatedSection>
+        <section className="space-y-4">
+          <div className="section-divider" />
+          <div className="flex items-center justify-between">
+            <p className="comment-label text-xs">{"//writing"}</p>
+            <Link
+              href="/blog"
+              className="text-xs font-mono text-terminal-muted hover:text-retro transition-colors cool-underline"
+            >
+              {"// view-all →"}
+            </Link>
+          </div>
+          {recentPosts.length === 0 ? (
+            <p className="text-xs font-mono text-terminal-muted">
+              {"// posts coming soon."}
+            </p>
+          ) : (
+            <div className="space-y-3">
+              {recentPosts.map((post, i) => (
+                <BlurFade key={post.slug} delay={0.1 + i * 0.07} inView>
+                  <BlogCard post={post} />
+                </BlurFade>
+              ))}
+            </div>
+          )}
+        </section>
+      </AnimatedSection>
+
+      <SkillsSection />
+
+      <Footer />
+    </div>
+  );
 }
