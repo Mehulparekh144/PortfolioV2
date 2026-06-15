@@ -14,9 +14,28 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }: Props) {
   const { slug } = await params;
+  const BASE_URL = "https://mehulparekh.vercel.app";
   try {
     const post = await getPostBySlug(slug);
-    return { title: post.title, description: post.description };
+    return {
+      title: post.title,
+      description: post.description,
+      alternates: { canonical: `${BASE_URL}/blog/${slug}` },
+      openGraph: {
+        type: "article",
+        url: `${BASE_URL}/blog/${slug}`,
+        title: post.title,
+        description: post.description,
+        publishedTime: post.date,
+        authors: ["Mehul Parekh"],
+        tags: post.tags,
+      },
+      twitter: {
+        card: "summary_large_image",
+        title: post.title,
+        description: post.description,
+      },
+    };
   } catch {
     return { title: "Post not found" };
   }
